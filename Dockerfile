@@ -6,6 +6,6 @@ COPY requirements.txt /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 
-COPY facebook_ad_replacer_backend /app
+COPY main.py /app
 
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
