@@ -32,4 +32,4 @@ def replace_image_link(image: Image):
 def replace_video_link(video: Video):
     """Replace video link with another link"""
     logging.info(f"got new video: {video}")
-    return {"link": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"}
+    return {"link": "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F100087363222763%2Fvideos%2F833353237757665%2F"}
