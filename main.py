@@ -21,14 +21,14 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/image-link/")
+@app.post("/image-link/")
 def replace_image_link(image: Image):
     """Replace image link with another link"""
     logging.info(f"got new image: {image}")
     return {"link": "https://cdn.pixabay.com/photo/2012/04/23/16/12/click-38743_960_720.png"}
 
 
-@app.get("/video-link/")
+@app.post("/video-link/")
 def replace_video_link(video: Video):
     """Replace video link with another link"""
     logging.info(f"got new video: {video}")
